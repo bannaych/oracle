@@ -32,3 +32,12 @@ yum install oracleasm-support.x86_64
 ```
 NOTE: **You do not need to install kmod from 7.x onwards, Its included in the kernal**
 
+- Install oracleasmlib - there is no yum packake for this, we need to download it
+- Do a google search for "oracleasmlib oel7"
+- go to https://www.oracle.com/linux/downloads/linux-asmlib-v7-downloads.html
+- Right click on the download oracleasmlib, and copy the link address
+```
+yum install https://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.12-1.el7.x86_64.rpm
+```
+
+
