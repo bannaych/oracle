@@ -30,4 +30,5 @@ oracleasmlib.x86_64 : The Oracle Automatic Storage Management library userspace 
 ```
 yum install oracleasm-support.x86_64
 ```
-NOTE: **You do not need to install kmod from 7.4 onwards, Its included in the kernal**
+NOTE: **You do not need to install kmod from 7.x onwards, Its included in the kernal**
+
