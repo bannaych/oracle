@@ -39,5 +39,21 @@ NOTE: **You do not need to install kmod from 7.x onwards, Its included in the ke
 ```
 yum install https://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.12-1.el7.x86_64.rpm
 ```
+- check that the Oracle user has been created
+```
+[root@ora2 ~]# id oracle
+uid=54321(oracle) gid=54321(oinstall) groups=54321(oinstall),54322(dba),54323(oper),54332(asmdba)
+```
+- Initialise oracleasm
+```
+# oracleasm init
+```
+- Configure oracleasm
+```
+oracleasm configure -i
+default user to own the drive: oracle
+default group: oinstall
+then select y
+```
 
 
