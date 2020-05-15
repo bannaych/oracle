@@ -17,3 +17,17 @@ oracle-database-preinstall-19c.x86_64 : "Sets the system for Oracle Database sin
 ```
 yum install oracle-database-preinstall-19c.x86_64
 ```
+- install the Oracle ASM packages
+```
+yum search oracleasm
+[root@ora2 ~]# yum search oracleasm
+Loaded plugins: langpacks, ulninfo
+========================================================================= N/S matched: oracleasm ==========================================================================
+kmod-oracleasm.x86_64 : oracleasm kernel module(s)
+oracleasm-support.x86_64 : The Oracle Automatic Storage Management support programs.
+oracleasmlib.x86_64 : The Oracle Automatic Storage Management library userspace code.
+```
+```
+yum install oracleasm-support.x86_64
+```
+NOTE: **You do not need to install kmod from 7.4 onwards, Its included in the kernal**
